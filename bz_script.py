@@ -76,7 +76,7 @@ def get_bugzillas(cases, bz_api, offline_token):
     for case in tqdm(bz_dict):
         for bug in bz_dict[case]:
                 bugs = bz_api.getbug(bug['bugzillaNumber'])
-                if "Telco " not in bugs.internal_whiteboard and "Telco" != bugs.internal_whiteboard[-5:] and "Telco, " not in bugs.internal_whiteboard:
+                if "telco" not in bugs.internal_whiteboard.lower():
                     untagged_bugs.append(bugs.id)
     return untagged_bugs
 
