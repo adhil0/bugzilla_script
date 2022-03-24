@@ -10,7 +10,7 @@ Script that:
 
 More info on offline_token: https://access.redhat.com/articles/3626371
 
-More info on Bugzilla API key: 
+More info on Bugzilla API key: https://bugzilla.redhat.com/userprefs.cgi?tab=apikey
 
 ### Usage:
 
